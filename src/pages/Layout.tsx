@@ -1,18 +1,49 @@
+
 import '../sass/main.scss'
 import { Outlet } from "react-router-dom"
-import { Header } from "../components/Header"
-import { Footer } from '../components/Footer'
+import { NavLink, useLocation } from "react-router-dom"
+
+
+
 
 export const Layout = () => {
 
 
+
+    const location = useLocation()
+    const isHome = location.pathname === '/';
+    const isGame = location.pathname === '/gamePage';
+    const isCart = location.pathname === '/cart';
     return(
         <>
-        <Header />
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        {!isHome &&(
+                            <NavLink to={'/'}>Home</NavLink>
+                        )}
+                    </li>
+                        <li>
+                        {!isGame && (
+                        <NavLink to={'/gamePage'}>Games</NavLink>
+                        )}
+                    </li>
+                    <li>
+                        {!isCart && (
+                            <NavLink to={'/cart'}>Cart</NavLink>
+                        )}
+
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <main>
             <Outlet />
         </main>
-        <Footer />
+             <footer>
+                All right reserved. @2024
+            </footer>
         </>
     )
 }
