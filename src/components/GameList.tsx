@@ -1,4 +1,5 @@
 import { Game } from "../models/Game"
+import '../sass/gameList.scss'
 
 interface IGameList{
 game: Game
@@ -9,11 +10,13 @@ export const GameList = ({game, addToCart}: IGameList) => {
 
 
     return(
-        <>
-        <h3>{game.name}</h3>
+        <div className="gameItem">
+        <div className="imageContainer">
         <img src={game.imageUrl} alt={game.imageUrl} />
-        <p>{game.price}</p>
+        </div>
+        <p>{game.name}</p>
+        <p>Price: {game.price}Kr</p>
         <button onClick={() => addToCart(game)}>Add to cart</button>
-        </>
+        </div>
     )
 }

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../sass/main.scss'
 import { Outlet } from "react-router-dom"
-import { NavLink, useLocation } from "react-router-dom"
+import { NavLink} from "react-router-dom"
 import { Game } from '../models/Game'
 
 
@@ -18,30 +18,20 @@ export const Layout = () => {
         setCart(cart.filter((game) => game.id !== id))
     }
 
-    const location = useLocation()
-    const isHome = location.pathname === '/';
-    const isGame = location.pathname === '/gamePage';
-    const isCart = location.pathname === '/cart';
     return(
         <>
         <header>
             <nav>
                 <ul>
                     <li>
-                        {!isHome &&(
-                            <NavLink to={'/'}>Home</NavLink>
-                        )}
+                     <NavLink to={'/'}>Home</NavLink>      
                     </li>
                         <li>
-                        {!isGame && (
-                        <NavLink to={'/gamePage'}>Games</NavLink>
-                        )}
+                <NavLink to={'/gamePage'}>Games</NavLink>
+                
                     </li>
                     <li>
-                        {!isCart && (
-                            <NavLink to={'/cart'}>Cart</NavLink>
-                        )}
-
+                <NavLink to={'/cart'}>Cart</NavLink>
                     </li>
                 </ul>
             </nav>
