@@ -1,14 +1,22 @@
-
+import { useState } from 'react'
 import '../sass/main.scss'
 import { Outlet } from "react-router-dom"
 import { NavLink, useLocation } from "react-router-dom"
-
+import { Game } from '../models/Game'
 
 
 
 export const Layout = () => {
 
+    const[cart, setCart] = useState<Game[]>([])
 
+    const addToCart = (game: Game) => {
+        setCart([...cart, game])
+    }
+
+    const removeFromCart = (id: number) => {
+        setCart(cart.filter((game) => game.id !== id))
+    }
 
     const location = useLocation()
     const isHome = location.pathname === '/';
@@ -39,7 +47,7 @@ export const Layout = () => {
             </nav>
         </header>
         <main>
-            <Outlet />
+            <Outlet context={{cart, addToCart, removeFromCart}}/>
         </main>
              <footer>
                 All right reserved. @2024

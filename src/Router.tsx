@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "./pages/Layout";
 import { Home } from "./pages/Home";
 import { GamePage } from "./pages/GamePage";
-import { Cart } from "./pages/Cart";
+import { Cart } from "./pages/CartPage";
 import { NotFound } from "./pages/NotFound";
 
 
