@@ -5,15 +5,17 @@ import { Carts } from "../components/Carts"
 interface ICart {
     cart: Game[]
     removeFromCart: (id:number) => void;
+    clearCart: () => void;
 }
 
 export const Cart = () => {
-    const { cart, removeFromCart} = useOutletContext<ICart>()
+    const { cart, removeFromCart, clearCart} = useOutletContext<ICart>()
 
     return(
         <>
         <h1>Cart Page</h1>
-        <Carts cart={cart} removeFromCart={removeFromCart}/>
+
+        <Carts cart={cart} removeFromCart={removeFromCart} clearCart={clearCart}/>
         </>
     )
 }
