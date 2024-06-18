@@ -1,6 +1,7 @@
-import { gamesData } from "../data/gamesData"
-import { Games } from "../components/Games"
 import { Game } from "../models/Game"
+import '../sass/games.scss'
+import { Games } from "../components/Games"
+import { gamesData } from "../data/gamesData"
 import { useOutletContext } from "react-router-dom"
 
 interface IGamePage {
@@ -12,6 +13,7 @@ export const GamePage = () => {
 
 return(
         <>
+            <h1>Game Page</h1>
         <Games games={gamesData} addToCart={addToCart} />
         </>
     )

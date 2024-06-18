@@ -3,7 +3,7 @@
     width: 70rem;
     display: flex;
     padding: 1rem;
-    margin: 1rem 0 -1rem 0;
+    margin: 3.6rem 0 -1rem 0;
     background-color: rgb(205, 205, 205);
 
 }
@@ -11,11 +11,11 @@
 .cartFormContainer {
     width: 20rem;
     display: flex;
-    padding: 1rem;
     margin-right: 1rem;
     justify-content: center;
     align-items: flex-start;
-    background-color: #fff;
+    background-color: black;
+    padding: 4rem 1rem 1rem 1rem;
     border: 0.01rem solid black; 
     
     .cartForm {
@@ -24,9 +24,10 @@
     padding: 1.3rem;
     border-radius: 0.6rem;
     flex-direction: column;
-    background-color: #fff;
     border: 0.01rem solid #ccc;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #a4a4a4, #ffffff, #919191);
+
+   
     
     label {
         font-weight: bold;
@@ -39,10 +40,12 @@
         margin-bottom: 1rem;
         border-radius: 0.4rem;
         border: 0.01rem solid #ccc;
+        background-color: rgba(128, 128, 128, 0.638);
         
         &:focus {
             outline: none;
             border-color: #007bff;
+            background-color: white;
         }
     }
     
@@ -78,8 +81,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #fff;
+    background-color:black;
     border: 0.01rem solid black; 
+    
+    h2 {
+        color: white;
+    }
 }
 
 .gameContainer {
@@ -93,12 +100,16 @@
     flex-direction: column;
     justify-content: center;
     border: 0.01rem solid black;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     background: linear-gradient(45deg, #a4a4a4, #ffffff, #919191);
-
+    
+    &:hover{
+     box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.327);
+    }
+    
     img {
         width: 6rem;
     }
+
 
     p {
         font-weight: bold;

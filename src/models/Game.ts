@@ -5,7 +5,8 @@ export class Game {
         public price: number, 
         public imageUrl: string, 
         public description: string,
-        public quantity: number
+        public quantity: number,
+        public salePrice: number
     ){
         this.id = Date.now()
     }
