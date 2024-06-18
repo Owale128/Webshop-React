@@ -7,9 +7,10 @@ import '../sass/cart.scss'
 interface ICartForm {
     cart: Game[];
     clearCart: () => void;
+    totalPrice: number;
 }
 
-export const CartForm = ({cart, clearCart}: ICartForm) => {
+export const CartForm = ({cart, clearCart, totalPrice}: ICartForm) => {
     const[inputValue, setInputValue] = useState<Form>({
         name: '',
         email: '',
@@ -30,7 +31,7 @@ export const CartForm = ({cart, clearCart}: ICartForm) => {
     }    
 
     const handleSubmit = (e: FormEvent) =>{
-        e.preventDefault
+        e.preventDefault()
 
         if(cart.length === 0){
             alert('There must be at least one product in the cart to complete the purchase!')
@@ -74,6 +75,9 @@ export const CartForm = ({cart, clearCart}: ICartForm) => {
             />
             <div className="buttonContainer">
             <button>Submit</button>
+            </div>
+            <div className="total">
+                <h3>Total: {totalPrice} kr</h3>
             </div>
         </form>
         </>

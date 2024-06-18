@@ -6,15 +6,17 @@ interface ICart {
     cart: Game[];
     removeFromCart: (id: number) => void;
     clearCart: () => void;
+    addToCart: (game: Game) => void;
+    totalPrice: number;
 }
 
-export const Carts = ({cart, removeFromCart, clearCart}: ICart) => {
+export const Carts = ({cart, removeFromCart, clearCart, addToCart, totalPrice}: ICart) => {
 
 
     return(
         <div className="cartsContainer">
         <div className="cartFormContainer">
-        <CartForm cart={cart} clearCart={clearCart} />
+        <CartForm cart={cart} clearCart={clearCart} totalPrice={totalPrice} />
         </div>
         <div className="gamesContainer">
         {cart.length === 0 ?  (
@@ -25,6 +27,7 @@ export const Carts = ({cart, removeFromCart, clearCart}: ICart) => {
                 key={c.id}
                 cart={c}
                 removeFromCart={removeFromCart}
+                addToCart={addToCart}
                 />
             ))
         )}
