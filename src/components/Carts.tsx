@@ -12,8 +12,11 @@ export const Carts = ({cart, removeFromCart, clearCart}: ICart) => {
 
 
     return(
-        <>
+        <div className="cartsContainer">
+        <div className="cartFormContainer">
         <CartForm cart={cart} clearCart={clearCart} />
+        </div>
+        <div className="gamesContainer">
         {cart.length === 0 ?  (
             <h2>Your cart is empty</h2>
         ):(
@@ -25,6 +28,7 @@ export const Carts = ({cart, removeFromCart, clearCart}: ICart) => {
                 />
             ))
         )}
-        </>
+        </div>
+        </div>
     )
 }

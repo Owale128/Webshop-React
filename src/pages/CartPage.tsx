@@ -13,7 +13,7 @@ export const Cart = () => {
 
     return(
         <>
-        <h1>Cart Page</h1>
+        <h1>Cart</h1>
 
         <Carts cart={cart} removeFromCart={removeFromCart} clearCart={clearCart}/>
         </>
