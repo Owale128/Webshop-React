@@ -9,7 +9,6 @@
     text-align: center;
     justify-content: center;
  
-    
     .gameItem{
         width: 11rem;
         padding: 0.5rem 0;
@@ -21,15 +20,38 @@
         &:hover {
             background-color:bisque;
         }
+
+        .originalPrice {
+            text-decoration: line-through;
+            color: #ff0000;
+        }
+        .salePrice {
+            color: #0f6400;
+            margin-left: 0.5rem;
+        }
         
         .imageContainer {
             margin-top: 0.5rem;
+            position: relative;
             img {
                 width: 80%;
                 height: auto;   
                 cursor: pointer;
             }
+ 
+            .discountBadge {
+                position: absolute;
+                top: 0.5rem;
+                right: 0.6rem;
+                background-color: #f00;
+                color: #fff;
+                padding: 0.3rem;
+                font-size: 0.8rem;
+                font-weight: bold;
+                border-radius: 0.2rem;
+            }
         }
+        
     }
     
     button {

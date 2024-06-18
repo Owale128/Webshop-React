@@ -1,11 +1,12 @@
-import { Game } from "../models/Game"
 import '../sass/games.scss'
+import { Game } from "../models/Game"
 import { Games } from "../components/Games"
 import { gamesData } from "../data/gamesData"
 import { useOutletContext } from "react-router-dom"
 
 interface IGamePage {
     addToCart: (game: Game) => void;
+
 }
 
 export const GamePage = () => {
@@ -14,7 +15,10 @@ export const GamePage = () => {
 return(
         <>
             <h1>Game Page</h1>
-        <Games games={gamesData} addToCart={addToCart} />
+        <Games 
+        games={gamesData} 
+        addToCart={addToCart} 
+        />
         </>
     )
 }

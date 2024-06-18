@@ -8,6 +8,7 @@ export const CartFunctions = () => {
 
     const addToCart = (game: Game) => {
         const existingGame = cart.find(item => item.id === game.id);
+        
         if(existingGame) {
             setCart(cart.map(item => item.id === game.id ? 
                 {...item, quantity: item.quantity + 1}

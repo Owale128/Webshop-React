@@ -9,7 +9,6 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 export const Layout = () => {
 const {cart, addToCart, removeFromCart, clearCart, totalPrice} = CartFunctions()
 
-
     return(
         <>
         <header>
