@@ -3,13 +3,13 @@
     gap: 1.5rem;
     height: 75vh;
     display: flex;
-    padding: 1rem 0;
     margin: 1.2rem;
+    padding: 1rem 0;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     
-
+    
     .gameItem{
         width: 11.6rem;
         padding: 0.5rem 0;
@@ -17,16 +17,17 @@
         transition: ease 0.2s;
         border: 0.01rem solid black;
         background: linear-gradient(45deg, #a4a4a4, #ffffff, #919191);
-
+        
         &:hover {
             background-color:bisque;
         }
-
+        
         .imageContainer {
             margin-top: 0.5rem;
             img {
                 width: 85%;
                 height: auto;   
+                cursor: pointer;
             }
         }
     }

@@ -16,7 +16,7 @@ export const CartList = ({cart, removeFromCart, addToCart}: ICartList) => {
                 <img src={cart.imageUrl} alt={cart.name} />
                 <p>{cart.price} Kr</p>
                 <div className="quantityContainer">
-                <button onClick={() => removeFromCart(cart.id)}>-</button>
+                <button onClick={() => removeFromCart(cart.id)}>{cart.quantity > 1 ? '-' : 'x'}</button>
                 <span>{cart.quantity}</span>
                 <button onClick={() => addToCart(cart)}>+</button>
                 </div>

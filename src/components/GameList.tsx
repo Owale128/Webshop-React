@@ -12,7 +12,7 @@ export const GameList = ({game, addToCart}: IGameList) => {
     return(
         <div className="gameItem">
         <div className="imageContainer">
-        <img src={game.imageUrl} alt={game.imageUrl} />
+        <img src={game.imageUrl} alt={game.imageUrl} title="Click for more info"/>
         </div>
         <p>{game.name}</p>
         <p>Price: {game.price}Kr</p>
