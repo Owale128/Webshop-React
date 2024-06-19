@@ -16,6 +16,10 @@
         transition: ease 0.2s;
         border: 0.01rem solid black;
         background: linear-gradient(45deg, #a4a4a4, #ffffff, #919191);
+
+        &:hover{
+            box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.518);
+           }
         
         &:hover {
             background-color:bisque;

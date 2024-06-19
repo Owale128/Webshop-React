@@ -5,6 +5,7 @@ interface ICartList {
     cart: Game
     removeFromCart: (id: number) => void;
     addToCart: (game: Game) => void;
+    
 }
 
 export const CartList = ({cart, removeFromCart, addToCart}: ICartList) => {

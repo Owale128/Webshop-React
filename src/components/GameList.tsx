@@ -2,16 +2,16 @@ import '../sass/games.scss'
 import { Game } from "../models/Game"
 import { GameModal } from './GameModal';
 import { ModalFunctions } from '../utils/modalUtils';
-import { SalePriceFunction } from '../utils/salePriceUtils';
+import { discountPriceFunction } from '../utils/discountPriceUtils';
 
-interface IGameList{
-game: Game
-addToCart: (game: Game) => void;
-}
+    interface IGameList{
+        game: Game
+        addToCart: (game: Game) => void;
+    }
 
 export const GameList = ({game, addToCart}: IGameList) => {
     const { showModal, openModal, closeModal } = ModalFunctions();
-    const { calculateSalePrice } = SalePriceFunction()
+    const { calculateDiscountPrice } = discountPriceFunction()
     
     return(
         <div className="gameItem">
@@ -27,7 +27,7 @@ export const GameList = ({game, addToCart}: IGameList) => {
         <p>Price: {game.onSale ? (
             <>
             <span className='originalPrice'>{game.price}Kr</span>
-            <span className='salePrice'>{calculateSalePrice(game.price, game.discount)}Kr</span>
+            <span className='salePrice'>{calculateDiscountPrice(game.price, game.discount)}Kr</span>
             </>
             ) : (
                 `${game.price}`
