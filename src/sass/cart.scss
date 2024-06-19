@@ -6,10 +6,9 @@
     margin: 3.6rem 0 -1rem 0;
     background-color: rgb(205, 205, 205);
 
-}
-
-.cartFormContainer {
-    width: 20rem;
+    
+    .cartFormContainer {
+        width: 20rem;
     display: flex;
     margin-right: 1rem;
     justify-content: center;
@@ -19,32 +18,32 @@
     border: 0.01rem solid black; 
     
     .cartForm {
-    width: 100%;
-    display: flex;
-    padding: 1.3rem;
-    border-radius: 0.6rem;
-    flex-direction: column;
-    border: 0.01rem solid #ccc;
-    background: linear-gradient(45deg, #a4a4a4, #ffffff, #919191);
-
-   
-    
-    label {
-        font-weight: bold;
-        margin-bottom: 0.3rem;
-    }
-    
-    input {
-        padding: 0.6rem;
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-        border-radius: 0.4rem;
+        width: 100%;
+        display: flex;
+        padding: 1.3rem;
+        border-radius: 0.6rem;
+        flex-direction: column;
         border: 0.01rem solid #ccc;
-        background-color: rgba(128, 128, 128, 0.638);
+        background: linear-gradient(45deg, #a4a4a4, #ffffff, #919191);
         
-        &:focus {
-            outline: none;
-            border-color: #007bff;
+        
+        
+        label {
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+        
+        input {
+            padding: 0.6rem;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            border-radius: 0.4rem;
+            border: 0.01rem solid #ccc;
+            background-color: rgba(128, 128, 128, 0.638);
+            
+            &:focus {
+                outline: none;
+                border-color: #007bff;
             background-color: white;
         }
     }
@@ -68,10 +67,11 @@
             }
         }
     }
-        .total {
-            margin-top: 1.5rem;
-            text-align: center;
-        }
+    .total {
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+}
 }
 }
 
@@ -110,7 +110,6 @@
         width: 6rem;
     }
 
-
     p {
         font-weight: bold;
         margin-bottom: 0.5rem;
@@ -139,4 +138,42 @@
                 font-weight: bold;
             }
         }
+}
+
+
+@media screen and (max-width: 47.94rem) {
+
+    .cartsContainer {
+        width: 95vw;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column; 
+        background: none;
+        height: 200vh;
+        
+        .cartFormContainer {
+            width: 100%;
+            margin-bottom: 1rem;  
+        }
+    }
+        
+    .gameContainer {
+        width: calc(50% - 1rem); 
+
+        .quantityContainer {
+    
+            button {    
+                 &:hover {
+                    color: black;
+                    background-color: rgb(246, 246, 246);
+                }
+
+                &:active {
+                    color: white;
+                    background-color: black;
+                }
+            }
+            
+        }
+    }
 }

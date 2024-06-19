@@ -12,7 +12,7 @@ export const Home = () => {
         <>
         <h1>Home</h1>
         <div className="homeContainer">
-        <h1>Welcome To The Game Planet</h1>
+        <h2>Welcome To The Game Planet</h2>
         <button onClick={handleNavigate}>Click here to see the games</button>
         <img src={handIcon} alt="Hand icon" />
         </div>

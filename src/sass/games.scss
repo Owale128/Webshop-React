@@ -8,12 +8,17 @@
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
- 
+    
     .gameItem{
         width: 11rem;
+        display: flex;
+        height: 17rem;
         padding: 0.5rem 0;
+        position: relative;
+        align-items: center;
         border-radius: 1rem;
         transition: ease 0.2s;
+        flex-direction: column;
         border: 0.01rem solid black;
         background: linear-gradient(45deg, #a4a4a4, #ffffff, #919191);
 
@@ -62,10 +67,12 @@
         color: white;
         cursor: pointer;
         padding: 0.2rem;
-        margin-top: 0.4rem;
+        margin-bottom: 0.3rem;
         border-radius: 0.5rem;
         background-color: black;
         transition: 0.4s ease;
+        position: absolute;
+        bottom: 0;
         
         &:hover {
             color: black;
@@ -74,7 +81,41 @@
     }
 }
 
-h1 {
-   margin-top: -2.5rem;
-   color: white;
-}
+@media screen and (max-width: 47.94rem) {
+
+
+
+    .gameList {
+        width: 100vw;
+        gap: 2rem;
+        height: 155vh;
+        padding: 4rem 0;
+        background-color: transparent;
+        justify-content: center;
+        .gameItem {
+            width: 9rem;
+            height: 15rem;
+            .imageContainer{
+
+                img {
+                    width: 80%;
+                }
+            }
+        }
+        button {
+    
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+            &:active {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+
+    
+ 
+ }
+
