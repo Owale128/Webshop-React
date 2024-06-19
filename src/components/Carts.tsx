@@ -12,7 +12,6 @@ interface ICart {
 
 export const Carts = ({cart, removeFromCart, clearCart, addToCart, totalPrice}: ICart) => {
 
-
     return(
         <div className="cartsContainer">
         <div className="cartFormContainer">

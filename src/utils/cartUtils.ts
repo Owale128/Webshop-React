@@ -1,13 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Game } from "../models/Game";
 import { discountPriceFunction } from "./discountPriceUtils";
 
 
 export const CartFunctions = () => {
 
-    const[cart, setCart] = useState<Game[]>([])
+    const cartFromLocalStorage: Game[] = JSON.parse(localStorage.getItem('cart') || '[]');
+
+    const[cart, setCart] = useState<Game[]>(cartFromLocalStorage)
     const [totalPrice, setTotalPrice] = useState(0);
     const{calculateDiscountPrice} = discountPriceFunction()
+
+    useEffect(() => {
+        localStorage.setItem('cart', JSON.stringify(cart));
+        setTotalPrice(calculateTotalPrice(cart));
+    }, [cart]);
 
     const calculateTotalPrice = (cart: Game[]) => {
         return cart.reduce((total, game) => total + (game.price * game.quantity), 0);
