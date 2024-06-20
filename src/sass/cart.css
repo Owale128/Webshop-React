@@ -145,6 +145,9 @@
   .gamesContainer .gameContainer {
     width: calc(50% - 1rem);
   }
+  .gamesContainer .gameContainer img {
+    width: 80%;
+  }
   .gamesContainer .gameContainer .quantityContainer button:hover {
     color: black;
     background-color: rgb(246, 246, 246);
