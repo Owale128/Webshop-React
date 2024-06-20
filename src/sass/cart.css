@@ -126,24 +126,30 @@
 @media screen and (max-width: 47.94rem) {
   .cartsContainer {
     width: 95vw;
-    padding: 1rem;
+    height: auto;
     display: flex;
+    margin: -2rem 0 7.5rem 0;
     flex-direction: column;
-    background: none;
-    height: 200vh;
+    background-color: transparent;
   }
   .cartsContainer .cartFormContainer {
     width: 100%;
     margin-bottom: 1rem;
+    background-color: transparent;
+    border: none;
   }
-  .gameContainer {
+  .gamesContainer {
+    background-color: transparent;
+    border: none;
+  }
+  .gamesContainer .gameContainer {
     width: calc(50% - 1rem);
   }
-  .gameContainer .quantityContainer button:hover {
+  .gamesContainer .gameContainer .quantityContainer button:hover {
     color: black;
     background-color: rgb(246, 246, 246);
   }
-  .gameContainer .quantityContainer button:active {
+  .gamesContainer .gameContainer .quantityContainer button:active {
     color: white;
     background-color: black;
   }

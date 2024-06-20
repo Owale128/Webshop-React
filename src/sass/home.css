@@ -31,8 +31,11 @@
     height: 77vh;
   }
   .homeContainer h2 {
-    margin-top: 11rem;
     font-size: 1.8rem;
     color: white;
+  }
+  .homeContainer button {
+    border: 0.01rem solid black;
+    color: black;
   }
 }/*# sourceMappingURL=home.css.map */

@@ -87,23 +87,24 @@
 
     .gameList {
         width: 100vw;
-        gap: 2rem;
-        height: 155vh;
-        padding: 4rem 0;
+        gap: 1rem;
+        height: auto;
+        padding: 4rem 0 0 0;
+        margin-bottom: -1rem;
         background-color: transparent;
         justify-content: center;
         .gameItem {
-            width: 9rem;
-            height: 15rem;
+            width: 10.5rem;
+            height: 17.5rem;
             .imageContainer{
 
                 img {
-                    width: 80%;
+                    width: 85%;
                 }
             }
         }
         button {
-    
+                font-size: 1.1rem;
             &:hover {
                 background-color: black;
                 color: white;

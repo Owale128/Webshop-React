@@ -37,9 +37,13 @@
     .homeContainer {
         height: 77vh;
         h2 {
-            margin-top: 11rem;
             font-size: 1.8rem;
             color: white;
+        }
+
+        button {
+            border: 0.01rem solid black;
+            color: black;
         }
     }
     

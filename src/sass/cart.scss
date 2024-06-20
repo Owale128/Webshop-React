@@ -8,7 +8,7 @@
 
     
     .cartFormContainer {
-        width: 20rem;
+    width: 20rem;
     display: flex;
     margin-right: 1rem;
     justify-content: center;
@@ -145,29 +145,35 @@
 
     .cartsContainer {
         width: 95vw;
-        padding: 1rem;
+        height: auto;
         display: flex;
+        margin: -2rem 0 7.5rem 0;
         flex-direction: column; 
-        background: none;
-        height: 200vh;
+        background-color: transparent;
         
         .cartFormContainer {
             width: 100%;
             margin-bottom: 1rem;  
+            background-color: transparent;
+            border: none;
+            
         }
     }
-        
-    .gameContainer {
-        width: calc(50% - 1rem); 
+        .gamesContainer {
+            background-color: transparent;
+            border: none;
 
-        .quantityContainer {
-    
+            .gameContainer {
+                width: calc(50% - 1rem); 
+                
+                .quantityContainer {
+                    
             button {    
-                 &:hover {
+                &:hover {
                     color: black;
                     background-color: rgb(246, 246, 246);
                 }
-
+                
                 &:active {
                     color: white;
                     background-color: black;
@@ -176,4 +182,5 @@
             
         }
     }
+}
 }
