@@ -1,0 +1,99 @@
+.gameList {
+  width: 75vw;
+  gap: 1.5rem;
+  height: 75vh;
+  display: flex;
+  margin: 1.2rem;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.gameList .gameItem {
+  width: 11rem;
+  display: flex;
+  height: 17rem;
+  padding: 0.5rem 0;
+  position: relative;
+  align-items: center;
+  border-radius: 1rem;
+  transition: ease 0.2s;
+  flex-direction: column;
+  border: 0.01rem solid black;
+  background: linear-gradient(45deg, #a4a4a4, #ffffff, #919191);
+}
+.gameList .gameItem:hover {
+  box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.518);
+}
+.gameList .gameItem:hover {
+  background-color: bisque;
+}
+.gameList .gameItem .originalPrice {
+  text-decoration: line-through;
+  color: #ff0000;
+}
+.gameList .gameItem .salePrice {
+  color: #0f6400;
+  margin-left: 0.5rem;
+}
+.gameList .gameItem .imageContainer {
+  margin-top: 0.5rem;
+  position: relative;
+}
+.gameList .gameItem .imageContainer img {
+  width: 80%;
+  height: auto;
+  cursor: pointer;
+}
+.gameList .gameItem .imageContainer .discountBadge {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.6rem;
+  background-color: #f00;
+  color: #fff;
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 0.2rem;
+}
+.gameList button {
+  color: white;
+  cursor: pointer;
+  padding: 0.2rem;
+  margin-bottom: 0.3rem;
+  border-radius: 0.5rem;
+  background-color: black;
+  transition: 0.4s ease;
+  position: absolute;
+  bottom: 0;
+}
+.gameList button:hover {
+  color: black;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 47.94rem) {
+  .gameList {
+    width: 100vw;
+    gap: 2rem;
+    height: 155vh;
+    padding: 4rem 0;
+    background-color: transparent;
+    justify-content: center;
+  }
+  .gameList .gameItem {
+    width: 9rem;
+    height: 15rem;
+  }
+  .gameList .gameItem .imageContainer img {
+    width: 80%;
+  }
+  .gameList button:hover {
+    background-color: black;
+    color: white;
+  }
+  .gameList button:active {
+    background-color: white;
+    color: black;
+  }
+}/*# sourceMappingURL=games.css.map */
