@@ -1,5 +1,5 @@
 import { Game } from "../models/Game"
-import '../sass/modal.scss'
+import '../sass/modal.css'
 
 interface IGameModal {
     game: Game;

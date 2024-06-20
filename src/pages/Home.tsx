@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import handIcon from '../assets/handIcon.png';
-import '../sass/home.scss'
+import '../sass/home.css'
 export const Home = () => {
     
     const navigate = useNavigate()

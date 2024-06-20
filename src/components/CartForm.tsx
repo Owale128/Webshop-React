@@ -2,7 +2,7 @@ import { ChangeEvent, FormEvent, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { Game } from "../models/Game"
 import { Form } from "../models/Form"
-import '../sass/cart.scss'
+import '../sass/cart.css'
 
 interface ICartForm {
     cart: Game[];

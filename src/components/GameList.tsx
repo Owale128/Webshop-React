@@ -1,4 +1,4 @@
-import '../sass/games.scss'
+import '../sass/games.css'
 import { Game } from "../models/Game"
 import { GameModal } from './GameModal';
 import { ModalFunctions } from '../utils/modalUtils';
