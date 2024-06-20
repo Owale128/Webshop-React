@@ -1,4 +1,4 @@
-import '../sass/main.css'
+import '../sass/main.scss'
 import { CartFunctions } from '../utils/cartUtils'
 import { Outlet, useLocation } from "react-router-dom"
 import { NavLink} from "react-router-dom"

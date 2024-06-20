@@ -1,4 +1,4 @@
-import '../sass/games.css'
+import '../sass/games.scss'
 import { Game } from "../models/Game"
 import { Games } from "../components/Games"
 import { gamesData } from "../data/gamesData"

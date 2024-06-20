@@ -1,5 +1,5 @@
 import { Game } from "../models/Game";
-import '../sass/cart.css';
+import '../sass/cart.scss';
 
 interface ICartList {
     cart: Game
