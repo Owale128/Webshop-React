@@ -24,7 +24,10 @@ h1 {
 }
 
 header {
+    width: 100%;
     height: 3rem;
+    z-index: 1000;
+    position: fixed;
     padding: 0.5rem 2rem;
     background-color: #282c34;
 }
@@ -72,6 +75,7 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 3rem;
 }
 
 footer {
@@ -90,6 +94,7 @@ footer {
             li {
                 margin: 0 1.5rem;
                 a {
+                    margin-top: 0.7rem;
                     &:hover {
                         color: white;
                     }
@@ -97,10 +102,10 @@ footer {
                         color: green;
                     }
                 }
-            }
-            .cartBadge {
-                top: 0.1rem;
-                right: 0.1rem;
+                .cartBadge {
+                    top: 0.1rem;
+                    right: -0.01rem;
+                }
             }
         }
     }

@@ -85,12 +85,13 @@
   .gameList .gameItem {
     width: 10.5rem;
     height: 17.5rem;
+    font-size: 1.1rem;
   }
   .gameList .gameItem .imageContainer img {
     width: 85%;
   }
   .gameList button {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .gameList button:hover {
     background-color: black;

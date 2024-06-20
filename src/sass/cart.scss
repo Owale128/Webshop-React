@@ -154,24 +154,31 @@
         .cartFormContainer {
             width: 100%;
             margin-bottom: 1rem;  
-            background-color: transparent;
             border: none;
+            background-color: transparent;
             
         }
     }
         .gamesContainer {
-            background-color: transparent;
+            margin-left: -1rem;
             border: none;
+            width: 95vw;
+            background-color: transparent;
 
             .gameContainer {
+                
                 width: calc(50% - 1rem); 
+                height: 15rem;
                 img {
+                    margin: 0.2rem 0;
                     width: 80%;
                 }
                 
                 .quantityContainer {
                     
             button {    
+                font-size: 1.1rem;
+                width: 1.1rem;
                 &:hover {
                     color: black;
                     background-color: rgb(246, 246, 246);
