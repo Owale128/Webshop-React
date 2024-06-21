@@ -1,27 +1,7 @@
-# React + TypeScript + Vite
+# Webshop application - React! 😃
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application is a game store built with React and TypeScript. Users can scroll through a list of games, see details about each game in a modal, and add games to a cart. The shopping cart handles adding, removing and updating games, as well as showing the total price. Users can fill out a form to complete the purchase. The application has a navigation bar to easily switch between the home page, the game page and the shopping cart.
 
-Currently, two official plugins are available:
+You can visit the page at: https://webshop-react-topaz.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![webShopPic](https://github.com/Owale128/Webshop-React/assets/110387474/39ef954b-2f4c-4e50-a666-07669d7881d4)
