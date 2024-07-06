@@ -4,7 +4,7 @@ This application is a game store built with React and TypeScript. Users can scro
 
 You can visit the page at: https://webshop-react-topaz.vercel.app/
 
-![webShopPic](https://github.com/Owale128/Webshop-React/assets/110387474/39ef954b-2f4c-4e50-a666-07669d7881d4)
+![gameShopPic](https://github.com/Owale128/WeatherApp-Vue3/assets/110387474/8a7941d0-970a-4fc4-a5d4-9892a90175b8)
 
 # Stack:
 [![My Skills](https://skillicons.dev/icons?i=vite,ts,html,react,sass,vercel&perline=3)](https://skillicons.dev)
