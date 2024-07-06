@@ -7,4 +7,4 @@ You can visit the page at: https://webshop-react-topaz.vercel.app/
 ![webShopPic](https://github.com/Owale128/Webshop-React/assets/110387474/39ef954b-2f4c-4e50-a666-07669d7881d4)
 
 # Stack:
-[![My Skills](https://skillicons.dev/icons?i=vite,js,html,react,sass,vercel&perline=3)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=vite,ts,html,react,sass,vercel&perline=3)](https://skillicons.dev)
