@@ -7,4 +7,4 @@ Link to the app: https://webshop-react-topaz.vercel.app/
 ![gameShopPic](https://github.com/Owale128/WeatherApp-Vue3/assets/110387474/8a7941d0-970a-4fc4-a5d4-9892a90175b8)
 
 # Stack:
-[![My Skills](https://skillicons.dev/icons?i=vite,ts,html,react,sass,vercel&perline=3)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=vite,ts,html,react,sass,vercel)](https://skillicons.dev)
