@@ -8,7 +8,8 @@
 }
 
 html, body {
-    height:auto;
+    min-height:100vh;
+    position: relative;
     background: linear-gradient(135deg, #2c3e50, #4ca1af, #2c3e50) no-repeat center center / cover;
 }
 
@@ -73,16 +74,17 @@ nav {
 main {
     flex: 1;
     display: flex;
+    margin-top: 3rem;
     align-items: center;
     flex-direction: column;
-    margin-top: 3rem;
 }
 
 footer {
+    bottom: 0;
     width: 100%;
     padding: 1rem;
     color: white;
-    margin-top: 6rem;
+    position: absolute;
     text-align: center;
     background-color: #282c34;
 }
